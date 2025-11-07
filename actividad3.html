@@ -6,254 +6,291 @@
     <title>Actividad 3 - Tablas y Formularios | Fontana Andrés</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <meta name="description" content="Actividad 3: Tablas y formularios en HTML5">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <!-- Efectos de hover personalizados -->
+    <link rel="stylesheet" href="assets/css/hover-effects.css">
 </head>
-<body>
+<body class="min-vh-100 d-flex flex-column">
     <!-- Header: Encabezado general del sitio -->
-    <header>
-        <h1>Portfolio Web - Diseño de Páginas Web</h1>
-        <p>Desarrollado por: Fontana Andrés</p>
-        <p>Primer Cuatrimestre - TP4</p>
+    <header class="bg-pastel-primary text-center py-4">
+        <h1 class="display-4">Portfolio Web - Diseño de Páginas Web</h1>
+        <p class="lead">Desarrollado por: Fontana Andrés</p>
+        <p>Segundo Cuatrimestre - Trabajo Integrador Final</p>
     </header>
 
     <!-- Nav: Menú de navegación -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="actividad1.html">Actividad 1 - Enlaces y Formato</a></li>
-            <li><a href="actividad2.html">Actividad 2 - Multimedia</a></li>
-            <li><a href="actividad3.html" aria-current="page">Actividad 3 - Tablas y Formularios</a></li>
-            <li><a href="detalles.html">Página de Detalles</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-pastel-secondary shadow-sm hover-transition">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-between gap-2 w-100 mt-2 mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-pastel-accent hover-transition" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-pastel-accent hover-transition" href="actividad1.html">Actividad 1 - Enlaces y Formato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-pastel-accent hover-transition" href="actividad2.html">Actividad 2 - Multimedia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-pastel-dark hover-transition" href="actividad3.html" aria-current="page">Actividad 3 - Tablas y Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-pastel-accent hover-transition" href="detalles.html">Página de Detalles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <!-- Main: Contenido principal -->
-    <main>
-        <section>
-            <h1 id="actividad3">Actividad N° 3 - Tablas y Formularios</h1>
+    <main class="flex-grow-1 py-4">
+        <div class="container">
+            <section class="mb-5">
+                <h1 id="actividad3" class="mb-4 display-5">Actividad N° 3 - Tablas y Formularios</h1>
 
-            <article>
-                <h2>Tablas</h2>
-                
-                <!-- Primera tabla: Horario de clases -->
-                <section>
-                    <h3>Horario de Clases</h3>
-                    <!-- Tabla con estructura semántica usando thead, tbody, tfoot y caption -->
-                    <table border="1" style="width: 100%; margin-bottom: 30px;">
-                        <!-- Etiqueta caption para dar contexto a la tabla -->
-                        <caption>Horario de Clases - Semana 1</caption>
-                        <!-- Encabezado de la tabla con celdas th y atributo scope -->
-                        <thead>
-                            <tr>
-                                <th scope="col">Hora</th>
-                                <th scope="col">Lunes</th>
-                                <th scope="col">Martes</th>
-                                <th scope="col">Miércoles</th>
-                                <th scope="col">Jueves</th>
-                                <th scope="col">Viernes</th>
-                            </tr>
-                        </thead>
-                        <!-- Cuerpo de la tabla con datos -->
-                        <tbody>
-                            <tr>
-                                <th scope="row">08:00 - 09:00</th>
-                                <td>Matemáticas</td>
-                                <td>Historia</td>
-                                <td>Lenguaje</td>
-                                <td>Ciencias</td>
-                                <td>Arte</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">09:00 - 10:00</th>
-                                <td>Física</td>
-                                <td>Matemáticas</td>
-                                <td>Inglés</td>
-                                <td>Educación Física</td>
-                                <td>Matemáticas</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">10:00 - 11:00</th>
-                                <!-- Uso de colspan para combinar celdas horizontalmente -->
-                                <td colspan="2">Receso</td>
-                                <td>Química</td>
-                                <td>Historia</td>
-                                <td>Lenguaje</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">11:00 - 12:00</th>
-                                <td>Biología</td>
-                                <td>Lenguaje</td>
-                                <td>Matemáticas</td>
-                                <td>Inglés</td>
-                                <td>Ciencias</td>
-                            </tr>
-                        </tbody>
-                        <!-- Pie de tabla con resumen -->
-                        <tfoot>
-                            <tr>
-                                <td colspan="6">Total de horas semanales: 20 horas</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </section>
+                <article class="bg-white shadow-sm p-4 rounded mb-4">
+                    <h2 class="mb-4 h3">Tablas</h2>
+                    <!-- Tablas con espaciado consistente -->
+                    <section class="mb-4">
+                        <h3 class="mb-4 h4">Horario de Clases</h3>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover shadow-sm">
+                                <caption class="text-center fw-light">Horario de Clases - Semana 1</caption>
+                                <thead class="table-light">
+                                    <tr>
+                                        <th scope="col">Hora</th>
+                                        <th scope="col">Lunes</th>
+                                        <th scope="col">Martes</th>
+                                        <th scope="col">Miércoles</th>
+                                        <th scope="col">Jueves</th>
+                                        <th scope="col">Viernes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">08:00 - 09:00</th>
+                                        <td>Matemáticas</td>
+                                        <td>Historia</td>
+                                        <td>Lenguaje</td>
+                                        <td>Ciencias</td>
+                                        <td>Arte</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">09:00 - 10:00</th>
+                                        <td>Física</td>
+                                        <td>Matemáticas</td>
+                                        <td>Inglés</td>
+                                        <td>Educación Física</td>
+                                        <td>Matemáticas</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10:00 - 11:00</th>
+                                        <td colspan="2" class="text-center">Receso</td>
+                                        <td>Química</td>
+                                        <td>Historia</td>
+                                        <td>Lenguaje</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">11:00 - 12:00</th>
+                                        <td>Biología</td>
+                                        <td>Lenguaje</td>
+                                        <td>Matemáticas</td>
+                                        <td>Inglés</td>
+                                        <td>Ciencias</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="6" class="text-center">Total de horas semanales: 20 horas</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </section>
 
-                <!-- Segunda tabla: Inventario de productos -->
-                <section>
-                    <h3>Inventario de Productos</h3>
-                    <!-- Tabla con estructura semántica usando thead, tbody, tfoot y caption -->
-                    <table border="1" style="width: 100%; margin-bottom: 30px;">
-                        <!-- Etiqueta caption para dar contexto a la tabla -->
-                        <caption>Inventario de Productos - Tienda Online</caption>
-                        <!-- Encabezado de la tabla con celdas th y atributo scope -->
-                        <thead>
-                            <tr>
-                                <th scope="col">Código</th>
-                                <th scope="col">Producto</th>
-                                <th scope="col">Categoría</th>
-                                <th scope="col">Precio</th>
-                                <th scope="col">Stock</th>
-                                <th scope="col">Estado</th>
-                            </tr>
-                        </thead>
-                        <!-- Cuerpo de la tabla con datos -->
-                        <tbody>
-                            <tr>
-                                <td>001</td>
-                                <td>Laptop HP Pavilion</td>
-                                <!-- Uso de rowspan para combinar celdas verticalmente -->
-                                <td rowspan="2">Electrónicos</td>
-                                <td>$899.99</td>
-                                <td>15</td>
-                                <td>Disponible</td>
-                            </tr>
-                            <tr>
-                                <td>002</td>
-                                <td>Mouse Inalámbrico</td>
-                                <td>$29.99</td>
-                                <td>50</td>
-                                <td>Disponible</td>
-                            </tr>
-                            <tr>
-                                <td>003</td>
-                                <td>Libro de Programación</td>
-                                <td>Libros</td>
-                                <td>$45.00</td>
-                                <td>8</td>
-                                <td>Disponible</td>
-                            </tr>
-                            <tr>
-                                <td>004</td>
-                                <td>Mesa de Escritorio</td>
-                                <td>Muebles</td>
-                                <td>$199.99</td>
-                                <td>0</td>
-                                <td>Agotado</td>
-                            </tr>
-                        </tbody>
-                        <!-- Pie de tabla con resumen -->
-                        <tfoot>
-                            <tr>
-                                <td colspan="3">Total de productos</td>
-                                <td>$1,174.97</td>
-                                <td>73</td>
-                                <td>4 productos</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </section>
-            </article>
+                    <section>
+                        <h3 class="mb-4">Inventario de Productos</h3>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover shadow-sm">
+                                <caption class="text-center fw-light">Inventario de Productos - Tienda Online</caption>
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th scope="col">Código</th>
+                                        <th scope="col">Producto</th>
+                                        <th scope="col">Categoría</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Stock</th>
+                                        <th scope="col">Estado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>001</td>
+                                        <td>Laptop HP Pavilion</td>
+                                        <td rowspan="2">Electrónicos</td>
+                                        <td>$899.99</td>
+                                        <td>15</td>
+                                        <td>Disponible</td>
+                                    </tr>
+                                    <tr>
+                                        <td>002</td>
+                                        <td>Mouse Inalámbrico</td>
+                                        <td>$29.99</td>
+                                        <td>50</td>
+                                        <td>Disponible</td>
+                                    </tr>
+                                    <tr>
+                                        <td>003</td>
+                                        <td>Libro de Programación</td>
+                                        <td>Libros</td>
+                                        <td>$45.00</td>
+                                        <td>8</td>
+                                        <td>Disponible</td>
+                                    </tr>
+                                    <tr>
+                                        <td>004</td>
+                                        <td>Mesa de Escritorio</td>
+                                        <td>Muebles</td>
+                                        <td>$199.99</td>
+                                        <td>0</td>
+                                        <td>Agotado</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="3">Total de productos</td>
+                                        <td>$1,174.97</td>
+                                        <td>73</td>
+                                        <td>4 productos</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </section>
+                </article>
 
-            <article>
-                <h2>Formulario de Registro</h2>
-                
-                <!-- Formulario con fieldset para agrupar campos relacionados -->
-                <form action="#" method="post" style="max-width: 600px;">
-                    <fieldset>
-                        <!-- Legend para describir el grupo de campos -->
-                        <legend>Información Personal</legend>
-                        
-                        <!-- Campo de texto con atributos required, placeholder y maxlength -->
-                        <label for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo" maxlength="50">
-                        <br><br>
-                        
-                        <!-- Campo de email con validación automática -->
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
-                        <br><br>
-                        
-                        <!-- Campo de teléfono con patrón de validación -->
-                        <label for="telefono">Teléfono:</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="1234567890" pattern="[0-9]{10}">
-                        <br><br>
-                        
-                        <!-- Campo de fecha con selector nativo -->
-                        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
-                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
-                        <br><br>
-                        
-                        <!-- Radio buttons para selección única -->
-                        <p>Género:</p>
-                        <input type="radio" id="masculino" name="genero" value="masculino">
-                        <label for="masculino">Masculino</label>
-                        <input type="radio" id="femenino" name="genero" value="femenino">
-                        <label for="femenino">Femenino</label>
-                        <input type="radio" id="otro" name="genero" value="otro">
-                        <label for="otro">Otro</label>
-                        <br><br>
-                        
-                        <!-- Checkbox para suscribirse al boletín de noticias -->
-                        <input type="checkbox" id="newsletter" name="newsletter" value="si">
-                        <label for="newsletter">Suscribirse al boletín de noticias</label>
-                        <br><br>
-                        
-                        <!-- Lista desplegable con opciones -->
-                        <label for="pais">País de residencia:</label>
-                        <select id="pais" name="pais" required>
-                            <option value="">Selecciona un país</option>
-                            <option value="argentina">Argentina</option>
-                            <option value="chile">Chile</option>
-                            <option value="colombia">Colombia</option>
-                            <option value="mexico">México</option>
-                            <option value="peru">Perú</option>
-                            <option value="españa">España</option>
-                            <option value="otros">Otros</option>
-                        </select>
-                        <br><br>
-                        
-                        <!-- Lista abierta con selección múltiple -->
-                        <label for="intereses">Intereses (selecciona múltiples opciones):</label>
-                        <select id="intereses" name="intereses" multiple size="4">
-                            <option value="tecnologia">Tecnología</option>
-                            <option value="deportes">Deportes</option>
-                            <option value="musica">Música</option>
-                            <option value="arte">Arte</option>
-                            <option value="cocina">Cocina</option>
-                            <option value="viajes">Viajes</option>
-                            <option value="lectura">Lectura</option>
-                            <option value="videojuegos">Videojuegos</option>
-                        </select>
-                        <br><br>
-                        
-                        <!-- Campo de texto amplio con textarea -->
-                        <label for="comentarios">Comentarios adicionales:</label>
-                        <textarea id="comentarios" name="comentarios" rows="5" cols="50" placeholder="Escribe aquí tus comentarios, sugerencias o preguntas..."></textarea>
-                        <br><br>
-                        
-                        <!-- Botones de envío y reset del formulario -->
-                        <input type="submit" value="Enviar Registro">
-                        <input type="reset" value="Limpiar Formulario">
-                    </fieldset>
-                </form>
-            </article>
-        </section>
+                <article class="bg-white shadow-sm p-4 rounded mb-4">
+                    <h2 class="mb-4 h3">Formulario de Registro</h2>
+                    
+                    <!-- Formulario con fieldset para agrupar campos relacionados -->
+                    <form action="#" method="post" class="bg-light p-4 rounded shadow-sm">
+                        <fieldset>
+                            <!-- Legend para describir el grupo de campos -->
+                            <legend class="mb-4">Información Personal</legend>
+                            
+                            <!-- Campo de texto con atributos required, placeholder y maxlength -->
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre completo:</label>
+                                <input type="text" id="nombre" name="nombre" class="form-control" required placeholder="Ingresa tu nombre completo" maxlength="50">
+                            </div>
+                            
+                            <!-- Campo de email con validación automática -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico:</label>
+                                <input type="email" id="email" name="email" class="form-control" required placeholder="ejemplo@correo.com">
+                            </div>
+                            
+                            <!-- Campo de teléfono con patrón de validación -->
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="1234567890" pattern="[0-9]{10}">
+                            </div>
+                            
+                            <!-- Campo de fecha con selector nativo -->
+                            <div class="mb-3">
+                                <label for="fecha_nacimiento" class="form-label">Fecha de nacimiento:</label>
+                                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" class="form-control" required>
+                            </div>
+                            
+                            <!-- Radio buttons para selección única -->
+                            <fieldset class="mb-3">
+                                <legend class="form-label">Género:</legend>
+                                <div class="form-check">
+                                    <input type="radio" id="masculino" name="genero" value="masculino" class="form-check-input">
+                                    <label for="masculino" class="form-check-label">Masculino</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" id="femenino" name="genero" value="femenino" class="form-check-input">
+                                    <label for="femenino" class="form-check-label">Femenino</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" id="otro" name="genero" value="otro" class="form-check-input">
+                                    <label for="otro" class="form-check-label">Otro</label>
+                                </div>
+                            </fieldset>
+                            
+                            <!-- Checkbox para suscribirse al boletín de noticias -->
+                            <div class="form-check mb-3">
+                                <input type="checkbox" id="newsletter" name="newsletter" value="si" class="form-check-input">
+                                <label for="newsletter" class="form-check-label">Suscribirse al boletín de noticias</label>
+                            </div>
+                            
+                            <!-- Lista desplegable con opciones -->
+                            <div class="mb-3">
+                                <label for="pais" class="form-label">País de residencia:</label>
+                                <select class="form-select" id="pais" name="pais" required>
+                                    <option value="">Selecciona un país</option>
+                                    <option value="argentina">Argentina</option>
+                                    <option value="chile">Chile</option>
+                                    <option value="colombia">Colombia</option>
+                                    <option value="mexico">México</option>
+                                    <option value="peru">Perú</option>
+                                    <option value="españa">España</option>
+                                    <option value="otros">Otros</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Lista abierta con selección múltiple -->
+                            <div class="mb-3">
+                                <label for="intereses" class="form-label">Intereses (selecciona múltiples opciones):</label>
+                                <select class="form-select" id="intereses" name="intereses" multiple size="4">
+                                    <option value="tecnologia">Tecnología</option>
+                                    <option value="deportes">Deportes</option>
+                                    <option value="musica">Música</option>
+                                    <option value="arte">Arte</option>
+                                    <option value="cocina">Cocina</option>
+                                    <option value="viajes">Viajes</option>
+                                    <option value="lectura">Lectura</option>
+                                    <option value="videojuegos">Videojuegos</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Campo de texto amplio con textarea -->
+                            <div class="mb-3">
+                                <label for="comentarios" class="form-label">Comentarios adicionales:</label>
+                                <textarea class="form-control" id="comentarios" name="comentarios" rows="5" placeholder="Escribe aquí tus comentarios, sugerencias o preguntas..."></textarea>
+                            </div>
+                            
+                            <!-- Botones de envío y reset del formulario -->
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button type="submit" class="btn btn-pastel-primary hover-transition">Enviar Registro</button>
+                                <button type="reset" class="btn btn-pastel-secondary hover-transition">Limpiar Formulario</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+        </div>
     </main>
 
     <!-- Footer: Pie de página -->
-    <footer>
-        <p>&copy; 2024 Fontana Andrés - Diseño de Páginas Web</p>
-        <p>Instituto Superior de Formacion Docente y Tecnica N°28</p>
-        <p>Primer Cuatrimestre - TP4</p>
-        <a href="index.html">Volver al Inicio</a>
+    <footer class="bg-pastel-accent py-3 text-center mt-auto">
+        <p class="mb-1">&copy; 2024 Fontana Andrés - Diseño de Páginas Web</p>
+        <p class="mb-1">Instituto Superior de Formacion Docente y Tecnica N°28</p>
+        <p class="mb-1">Segundo Cuatrimestre - Trabajo Integrador Final</p>
+        <a href="index.html" class="btn btn-outline-pastel-primary btn-sm hover-transition">Volver al Inicio</a>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Form JS -->
+    <script src="assets/js/form.js"></script>
 </body>
-</html> 
+</html>

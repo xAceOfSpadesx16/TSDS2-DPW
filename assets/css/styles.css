@@ -1,0 +1,136 @@
+/* Paleta de colores pastel armoniosa - Azules y verde agua */
+:root {
+    --pastel-primary: #B8D4E3;
+    /* Azul cielo suave - Color principal */
+    --pastel-secondary: #D4E8F0;
+    /* Azul cielo muy claro - Color secundario */
+    --pastel-accent: #C5E3D8;
+    /* Verde agua suave - Color de acento */
+    --pastel-dark: #A8C8D8;
+    /* Azul cielo medio - Color oscuro */
+
+}
+
+/* Clases de color de fondo */
+.bg-pastel-primary {
+    background-color: var(--pastel-primary) !important;
+}
+
+.bg-pastel-secondary {
+    background-color: var(--pastel-secondary) !important;
+}
+
+.bg-pastel-accent {
+    background-color: var(--pastel-accent) !important;
+}
+
+.bg-pastel-dark {
+    background-color: var(--pastel-dark) !important;
+}
+
+/* Clases de color de texto */
+.text-pastel-primary {
+    color: var(--pastel-primary) !important;
+}
+
+.text-pastel-secondary {
+    color: var(--pastel-secondary) !important;
+}
+
+.text-pastel-accent {
+    color: var(--pastel-accent) !important;
+}
+
+.text-pastel-dark {
+    color: var(--pastel-dark) !important;
+}
+
+/* Estilos para botones normales y outline con colores pastel */
+.btn-pastel-primary {
+    background-color: var(--pastel-primary);
+    color: #000;
+    border: none;
+}
+
+.btn-pastel-primary:hover {
+    background-color: var(--pastel-accent);
+    color: #000;
+}
+
+.btn-outline-pastel-primary {
+    color: #000;
+    border: 1px solid var(--pastel-primary);
+}
+
+.btn-outline-pastel-primary:hover {
+    background-color: var(--pastel-primary);
+}
+
+.btn-pastel-secondary {
+    background-color: var(--pastel-secondary);
+    color: #000;
+    border: none;
+}
+
+.btn-pastel-secondary:hover {
+    background-color: var(--pastel-primary);
+    color: #000;
+}
+
+.btn-outline-pastel-secondary {
+    color: #000;
+    border: 1px solid var(--pastel-secondary);
+}
+
+.btn-outline-pastel-secondary:hover {
+    background-color: var(--pastel-secondary);
+}
+
+.btn-pastel-accent {
+    background-color: var(--pastel-accent);
+    color: #000;
+    border: none;
+}
+
+.btn-pastel-accent:hover {
+    background-color: var(--pastel-primary);
+    color: #000;
+}
+
+.btn-outline-pastel-accent {
+    color: #000;
+    border: 1px solid var(--pastel-accent);
+}
+
+.btn-outline-pastel-accent:hover {
+    background-color: var(--pastel-accent);
+}
+
+.btn-pastel-dark {
+    background-color: var(--pastel-dark);
+    color: #000;
+    border: none;
+}
+
+.btn-pastel-dark:hover {
+    background-color: var(--pastel-accent);
+    color: #000;
+}
+
+.btn-outline-pastel-dark {
+    color: #000;
+    border: 1px solid var(--pastel-dark);
+}
+
+.btn-outline-pastel-dark:hover {
+    background-color: var(--pastel-dark);
+}
+
+/* Clase para transiciones de hover */
+.hover-transition {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#container-seccion-importante {
+    margin-top: 500px;
+}

@@ -5,131 +5,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Detalles | Fontana Andrés</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <meta name="description" content="Página de detalles del portfolio web - Parcial Primer Cuatrimestre">
+    <meta name="description" content="Página de detalles del portfolio web - Actividad Integradora Final">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/hover-effects.css">
 </head>
-<body>
+<body class="min-vh-100 d-flex flex-column">
     <!-- Header: Encabezado general del sitio -->
-    <header>
-        <h1>Portfolio Web - Diseño de Páginas Web</h1>
-        <p>Desarrollado por: Fontana Andrés</p>
-        <p>Primer Cuatrimestre - TP4</p>
+    <header class="bg-pastel-primary text-center py-4">
+        <h1 class="display-4">Portfolio Web - Diseño de Páginas Web</h1>
+        <p class="lead">Desarrollado por: Fontana Andrés</p>
+        <p>Segundo Cuatrimestre - Trabajo Integrador Final</p>
     </header>
 
     <!-- Nav: Menú de navegación -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="actividad1.html">Actividad 1 - Enlaces y Formato</a></li>
-            <li><a href="actividad2.html">Actividad 2 - Multimedia</a></li>
-            <li><a href="actividad3.html">Actividad 3 - Tablas y Formularios</a></li>
-            <li><a href="detalles.html" aria-current="page">Página de Detalles</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-pastel-secondary shadow-sm hover-transition">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-between gap-2 w-100 mt-2 mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-pastel-accent hover-transition" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-pastel-accent hover-transition" href="actividad1.html">Actividad 1 - Enlaces y Formato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-pastel-accent hover-transition" href="actividad2.html">Actividad 2 - Multimedia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-pastel-accent hover-transition" href="actividad3.html">Actividad 3 - Tablas y Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-pastel-dark hover-transition" href="detalles.html" aria-current="page">Página de Detalles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <!-- Main: Contenido principal -->
-    <main>
-        <section>
-            <h1>Página de Detalles - Parcial Primer Cuatrimestre</h1>
-            
-            <article>
-                <h2>Descripción del Proyecto</h2>
-                <p>Este portfolio web fue desarrollado como trabajo práctico para el parcial del primer cuatrimestre de la materia "Diseño de Páginas Web". El proyecto reúne todas las actividades realizadas hasta la Actividad 3, organizadas en una estructura semántica coherente que simula un pequeño sitio web.</p>
-            </article>
-
-            <article>
-                <h2>Estructura del Sitio Web</h2>
-                <h3>Páginas Incluidas:</h3>
-                <ul>
-                    <li><strong>index.html:</strong> Página principal con descripción general del portfolio</li>
-                    <li><strong>actividad1.html:</strong> Enlaces y formato de texto (Actividad 1)</li>
-                    <li><strong>actividad2.html:</strong> Listas, imágenes y contenido multimedia (Actividad 2)</li>
-                    <li><strong>actividad3.html:</strong> Tablas y formularios (Actividad 3)</li>
-                    <li><strong>detalles.html:</strong> Esta página con información técnica del proyecto</li>
-                </ul>
-            </article>
-
-            <article>
-                <h2>Implementación de Etiquetas Semánticas HTML5</h2>
-                <h3>Estructura Principal:</h3>
-                <ul>
-                    <li><strong>&lt;header&gt;:</strong> Encabezado general del sitio presente en todas las páginas</li>
-                    <li><strong>&lt;nav&gt;:</strong> Menú de navegación que conecta todas las páginas</li>
-                    <li><strong>&lt;main&gt;:</strong> Contenido principal de cada página</li>
-                    <li><strong>&lt;footer&gt;:</strong> Pie de página con información de copyright</li>
-                </ul>
+    <main class="flex-grow-1 py-5">
+        <div class="container">
+            <section class="mb-5">
+                <h1 class="mb-4 display-5">Página de Detalles - Actividad Integradora Final</h1>
                 
-                <h3>Estructura de Contenido:</h3>
-                <ul>
-                    <li><strong>&lt;section&gt;:</strong> Secciones temáticas dentro del contenido</li>
-                    <li><strong>&lt;article&gt;:</strong> Contenido independiente y autocontenido</li>
-                    <li><strong>&lt;aside&gt;:</strong> Información complementaria</li>
-                    <li><strong>&lt;figure&gt;:</strong> Contenido multimedia con descripción</li>
-                </ul>
-            </article>
+                <article class="bg-white shadow-sm p-4 rounded mb-4">
+                    <h2 class="mb-3 h3">Descripción del Proyecto</h2>
+                    <p>Este portfolio web fue desarrollado como trabajo integrador final del segundo cuatrimestre de la materia "Diseño de Páginas Web". El proyecto reúne todas las actividades realizadas durante el cuatrimestre, organizadas en una estructura semántica coherente que simula un pequeño sitio web completo.</p>
+                </article>
 
-            <article>
-                <h2>Contenido de las Actividades</h2>
-                
-                <h3>Actividad 1 - Enlaces y Formato:</h3>
-                <ul>
-                    <li>Estructura básica de HTML5</li>
-                    <li>Etiquetas de formato: &lt;em&gt;, &lt;strong&gt;, &lt;mark&gt;, &lt;del&gt; &lt;s&gt;</li>
-                    <li>Tres tipos de hipervínculos: interno, externo, entre páginas</li>
-                    <li>Tres atributos diferentes: title, target="_blank", accesskey</li>
-                </ul>
+                <article class="bg-white shadow-sm p-4 rounded mb-4">
+                    <h2 class="mb-3 h3">Estructura del Sitio Web</h2>
+                    <h3 class="mb-3 h4">Páginas Incluidas:</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-0 ps-0"><strong>index.html:</strong> Página principal con descripción general del portfolio</li>
+                        <li class="list-group-item border-0 ps-0"><strong>actividad1.html:</strong> Enlaces y formato de texto (Actividad 1)</li>
+                        <li class="list-group-item border-0 ps-0"><strong>actividad2.html:</strong> Listas, imágenes y contenido multimedia (Actividad 2)</li>
+                        <li class="list-group-item border-0 ps-0"><strong>actividad3.html:</strong> Tablas y formularios (Actividad 3)</li>
+                        <li class="list-group-item border-0 ps-0"><strong>detalles.html:</strong> Esta página con información técnica del proyecto</li>
+                    </ul>
+                </article>
 
-                <h3>Actividad 2 - Multimedia:</h3>
-                <ul>
-                    <li>Listas ordenadas, desordenadas y de definición</li>
-                    <li>Lista de términos con imágenes representativas</li>
-                    <li>Dos archivos de audio con múltiples fuentes</li>
-                    <li>Video con subtítulos en formato .vtt</li>
-                    <li>Galería de imágenes adaptable con &lt;picture&gt;</li>
-                    <li>Contenido embebido: YouTube, Google Maps, PDF</li>
-                </ul>
+                <article class="bg-white shadow-sm p-4 rounded mb-4">
+                    <h2 class="mb-3 h3">Implementación de Etiquetas Semánticas HTML5</h2>
+                    <h3 class="mb-3 h4">Estructura Principal:</h3>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item border-0 ps-0"><strong>&lt;header&gt;:</strong> Encabezado general del sitio presente en todas las páginas</li>
+                        <li class="list-group-item border-0 ps-0"><strong>&lt;nav&gt;:</strong> Menú de navegación que conecta todas las páginas</li>
+                        <li class="list-group-item border-0 ps-0"><strong>&lt;main&gt;:</strong> Contenido principal de cada página</li>
+                        <li class="list-group-item border-0 ps-0"><strong>&lt;footer&gt;:</strong> Pie de página con información de copyright</li>
+                    </ul>
+                    
+                    <h3 class="mb-3 h4">Estructura de Contenido:</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-0 ps-0"><strong>&lt;section&gt;:</strong> Secciones temáticas dentro del contenido</li>
+                        <li class="list-group-item border-0 ps-0"><strong>&lt;article&gt;:</strong> Contenido independiente y autocontenido</li>
+                        <li class="list-group-item border-0 ps-0"><strong>&lt;aside&gt;:</strong> Información complementaria</li>
+                        <li class="list-group-item border-0 ps-0"><strong>&lt;figure&gt;:</strong> Contenido multimedia con descripción</li>
+                    </ul>
+                </article>
 
-                <h3>Actividad 3 - Tablas y Formularios:</h3>
-                <ul>
-                    <li>Dos tablas con estructura semántica completa</li>
-                    <li>Uso de &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</li>
-                    <li>Etiquetas &lt;caption&gt; para contexto</li>
-                    <li>colspan y rowspan correctamente implementados</li>
-                    <li>Celdas de cabecera con atributo scope</li>
-                    <li>Formulario completo con múltiples tipos de inputs</li>
-                    <li>Elementos de formulario avanzados y validación</li>
-                </ul>
-            </article>
+                <article class="bg-white shadow-sm p-4 rounded mb-4">
+                    <h2 class="mb-3 h3">Contenido de las Actividades</h2>
+                    
+                    <h3 class="mb-3 h4">Actividad 1 - Enlaces y Formato:</h3>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item border-0 ps-0">Estructura básica de HTML5</li>
+                        <li class="list-group-item border-0 ps-0">Etiquetas de formato: &lt;em&gt;, &lt;strong&gt;, &lt;mark&gt;, &lt;del&gt; &lt;s&gt;</li>
+                        <li class="list-group-item border-0 ps-0">Tres tipos de hipervínculos: interno, externo, entre páginas</li>
+                        <li class="list-group-item border-0 ps-0">Tres atributos diferentes: title, target="_blank", accesskey</li>
+                    </ul>
 
-            <article>
-                <h2>Características Técnicas Implementadas</h2>
-                <ul>
-                    <li><strong>Accesibilidad:</strong> Atributos aria-current, labels asociados, estructura semántica</li>
-                    <li><strong>Responsive Design:</strong> Meta viewport, imágenes adaptables</li>
-                    <li><strong>SEO:</strong> Meta description, title descriptivo</li>
-                    <li><strong>Compatibilidad:</strong> Múltiples fuentes de audio/video, imágenes, etc</li>
-                    <li><strong>Navegación:</strong> Menú en todas las páginas, enlaces internos y externos</li>
-                    <li><strong>Validación:</strong> Formulario con atributos required, type, pattern, multiple, size, etc</li>
-                </ul>
-            </article>
+                    <h3 class="mb-3 h4">Actividad 2 - Multimedia:</h3>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item border-0 ps-0">Listas ordenadas, desordenadas y de definición</li>
+                        <li class="list-group-item border-0 ps-0">Lista de términos con imágenes representativas</li>
+                        <li class="list-group-item border-0 ps-0">Dos archivos de audio con múltiples fuentes</li>
+                        <li class="list-group-item border-0 ps-0">Video con subtítulos en formato .vtt</li>
+                        <li class="list-group-item border-0 ps-0">Galería de imágenes adaptable con &lt;picture&gt;</li>
+                        <li class="list-group-item border-0 ps-0">Contenido embebido: YouTube, Google Maps, PDF</li>
+                    </ul>
 
-            <aside>
-                <h3>Información del Parcial</h3>
-                <p><strong>Alumno:</strong> Fontana Andrés</p>
-                <p><strong>Materia:</strong> Diseño de Páginas Web</p>
-                <p><strong>Profesora:</strong> Luzzi, Milagros</p>
-                <p><strong>Cuatrimestre:</strong> Primer Cuatrimestre</p>
-                <p><strong>Fecha de Presentación:</strong> 11/07/2025</p>
-            </aside>
-        </section>
+                    <h3 class="mb-3 h4">Actividad 3 - Tablas y Formularios:</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-0 ps-0">Dos tablas con estructura semántica completa</li>
+                        <li class="list-group-item border-0 ps-0">Uso de &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</li>
+                        <li class="list-group-item border-0 ps-0">Etiquetas &lt;caption&gt; para contexto</li>
+                        <li class="list-group-item border-0 ps-0">colspan y rowspan correctamente implementados</li>
+                        <li class="list-group-item border-0 ps-0">Celdas de cabecera con atributo scope</li>
+                        <li class="list-group-item border-0 ps-0">Formulario completo con múltiples tipos de inputs</li>
+                        <li class="list-group-item border-0 ps-0">Elementos de formulario avanzados y validación</li>
+                    </ul>
+                </article>
+
+                <article class="bg-white shadow-sm p-4 rounded mb-4">
+                    <h2 class="mb-3 h3">Características Técnicas Implementadas</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-0 ps-0"><strong>Accesibilidad:</strong> Atributos aria-current, labels asociados, estructura semántica</li>
+                        <li class="list-group-item border-0 ps-0"><strong>Responsive Design:</strong> Meta viewport, imágenes adaptables</li>
+                        <li class="list-group-item border-0 ps-0"><strong>SEO:</strong> Meta description, title descriptivo</li>
+                        <li class="list-group-item border-0 ps-0"><strong>Compatibilidad:</strong> Múltiples fuentes de audio/video, imágenes, etc</li>
+                        <li class="list-group-item border-0 ps-0"><strong>Navegación:</strong> Menú en todas las páginas, enlaces internos y externos</li>
+                        <li class="list-group-item border-0 ps-0"><strong>Validación:</strong> Formulario con atributos required, type, pattern, multiple, size, etc</li>
+                    </ul>
+                </article>
+
+                <article class="bg-white shadow-sm p-4 rounded mb-4">
+                    <h2 class="mb-3 h3">Estilado y Diseño</h2>
+                    <h3 class="mb-3 h4">Framework CSS:</h3>
+                    <p class="mb-3">El proyecto utiliza <strong>Bootstrap 5.3.2</strong> como framework CSS principal para la estructura, los componentes y la responsividad del sitio.</p>
+                    
+                    <h3 class="mb-3 h4">Sistemas de Layout:</h3>
+                    <p class="mb-3">Se implementaron dos sistemas de layout principales:</p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item border-0 ps-0"><strong>Flexbox:</strong> Utilizado extensivamente para el layout general del sitio:
+                            <ul class="mt-2 mb-0">
+                                <li>Estructura principal: <code>d-flex flex-column</code> en el body para mantener el footer fijo al final</li>
+                                <li>Contenido principal: <code>flex-grow-1</code> en el main para ocupar el espacio disponible</li>
+                                <li>Navegación: uso de flexbox para alinear elementos del menú</li>
+                                <li>Elementos de contenido: alineación y distribución de elementos (listas, botones, etc.)</li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item border-0 ps-0"><strong>Grid System:</strong> Utilizado principalmente en la Actividad 2:
+                            <ul class="mt-2 mb-0">
+                                <li>Galería de imágenes: grid responsivo con <code>row-cols-1 row-cols-md-2 row-cols-lg-3</code></li>
+                                <li>Sección de audios: distribución en columnas con <code>row</code> y <code>col-md-6</code></li>
+                                <li>Contenido embebido: organización de iframes con sistema de grid</li>
+                                <li>Formulario de Actividad 3: <code>d-grid</code> para los botones del formulario</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <h3 class="mb-3 h4">Estilos Personalizados:</h3>
+                    <p class="mb-3">Se implementaron estilos personalizados en <strong>styles.css</strong> que complementan Bootstrap, incluyendo:</p>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item border-0 ps-0">Variables CSS para la paleta de colores personalizada</li>
+                        <li class="list-group-item border-0 ps-0">Clases de color de fondo y texto (bg-pastel-*, text-pastel-*)</li>
+                        <li class="list-group-item border-0 ps-0">Estilos personalizados para botones (btn-pastel-*, btn-outline-pastel-*)</li>
+                        <li class="list-group-item border-0 ps-0">Efectos de transición en hover (hover-transition)</li>
+                    </ul>
+                    
+                    <h3 class="mb-3 h4">Paleta de Colores:</h3>
+                    <p class="mb-3">Se utilizó una paleta de colores pastel armoniosa basada en tonos azules y verde agua:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-0 ps-0">
+                            <strong>Primary:</strong> <span class="badge bg-pastel-primary text-dark">#B8D4E3</span> - Azul cielo suave (Color principal)
+                        </li>
+                        <li class="list-group-item border-0 ps-0">
+                            <strong>Secondary:</strong> <span class="badge bg-pastel-secondary text-dark">#D4E8F0</span> - Azul cielo muy claro (Color secundario)
+                        </li>
+                        <li class="list-group-item border-0 ps-0">
+                            <strong>Accent:</strong> <span class="badge bg-pastel-accent text-dark">#C5E3D8</span> - Verde agua suave (Color de acento)
+                        </li>
+                        <li class="list-group-item border-0 ps-0">
+                            <strong>Dark:</strong> <span class="badge bg-pastel-dark text-dark">#A8C8D8</span> - Azul cielo medio (Color oscuro)
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="bg-white shadow-sm p-4 rounded mb-4">
+                    <h2 class="mb-3 h3">JavaScript Implementado</h2>
+                    <h3 class="mb-3 h4">Evento de Formulario:</h3>
+                    <p class="mb-3">Se implementó un script JavaScript (<strong>form.js</strong>) que maneja el evento de envío del formulario en la Actividad 3:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-0 ps-0"><strong>Evento utilizado:</strong> <code>submit</code> del formulario</li>
+                        <li class="list-group-item border-0 ps-0"><strong>Funcionalidad:</strong> Previene el envío predeterminado del formulario y captura todos los datos ingresados</li>
+                        <li class="list-group-item border-0 ps-0"><strong>Método:</strong> Utiliza <code>FormData</code> para obtener todos los valores del formulario</li>
+                        <li class="list-group-item border-0 ps-0"><strong>Procesamiento:</strong> Convierte los datos a un objeto JavaScript y los muestra mediante <code>alert()</code></li>
+                        <li class="list-group-item border-0 ps-0"><strong>Manejo de múltiples valores:</strong> Agrupa correctamente valores múltiples (como selects múltiples) en arrays</li>
+                        <li class="list-group-item border-0 ps-0"><strong>Propósito educativo:</strong> Demostrar la captura y visualización de datos de formularios en JavaScript</li>
+                    </ul>
+                </article>
+
+                <aside class="bg-pastel-primary p-4 rounded">
+                    <h3 class="mb-3 h4">Información de la Actividad</h3>
+                    <p class="mb-2"><strong>Alumno:</strong> Fontana Andrés</p>
+                    <p class="mb-2"><strong>Materia:</strong> Diseño de Páginas Web</p>
+                    <p class="mb-2"><strong>Profesora:</strong> Luzzi, Milagros</p>
+                    <p class="mb-2"><strong>Cuatrimestre:</strong> Segundo Cuatrimestre</p>
+                    <p class="mb-0"><strong>Fecha de Presentación:</strong> 07/11/2025</p>
+                </aside>
+            </section>
+        </div>
     </main>
 
-    <hr>
     <!-- Footer: Pie de página -->
-    <footer>
-        <p>&copy; 2024 Fontana Andrés - Diseño de Páginas Web</p>
-        <p>Instituto Superior de Formacion Docente y Tecnica N°28</p>
-        <p>Primer Cuatrimestre - TP4</p>
-        <a href="index.html">Volver al Inicio</a>
+    <footer class="bg-pastel-accent py-3 text-center mt-auto">
+        <p class="mb-1">&copy; 2024 Fontana Andrés - Diseño de Páginas Web</p>
+        <p class="mb-1">Instituto Superior de Formacion Docente y Tecnica N°28</p>
+        <p class="mb-1">Segundo Cuatrimestre - Trabajo Integrador Final</p>
+        <a href="index.html" class="btn btn-outline-pastel-primary btn-sm hover-transition">Volver al Inicio</a>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html> 
+</html>

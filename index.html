@@ -7,39 +7,62 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <meta name="description" content="Portfolio web con actividades de Diseño de Páginas Web">
     <meta name="author" content="Fontana Andrés">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/hover-effects.css">
 </head>
-<body>
+<body class="min-vh-100 d-flex flex-column">
     <!-- Header: Encabezado general del sitio -->
-    <header>
-        <h1>Portfolio Web - Diseño de Páginas Web</h1>
-        <p>Desarrollado por: Fontana Andrés</p>
-        <p>Primer Cuatrimestre - TP4</p>
+    <header class="bg-pastel-primary text-center py-4">
+        <h1 class="display-4">Portfolio Web - Diseño de Páginas Web</h1>
+        <p class="lead">Desarrollado por: Fontana Andrés</p>
+        <p>Segundo Cuatrimestre - Trabajo Integrador Final</p>
     </header>
 
     <!-- Nav: Menú de navegación -->
-    <nav>
-        <ul>
-            <li><a href="index.html" aria-current="page">Inicio</a></li>
-            <li><a href="actividad1.html">Actividad 1 - Enlaces y Formato</a></li>
-            <li><a href="actividad2.html">Actividad 2 - Multimedia</a></li>
-            <li><a href="actividad3.html">Actividad 3 - Tablas y Formularios</a></li>
-            <li><a href="detalles.html">Página de Detalles</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-pastel-secondary shadow-sm hover-transition">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-between gap-2 w-100 mt-2 mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-pastel-dark hover-transition" href="index.html" aria-current="page">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-pastel-accent hover-transition" href="actividad1.html">Actividad 1 - Enlaces y Formato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-pastel-accent hover-transition" href="actividad2.html">Actividad 2 - Multimedia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-pastel-accent hover-transition" href="actividad3.html">Actividad 3 - Tablas y Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-pastel-accent hover-transition" href="detalles.html">Página de Detalles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <!-- Main: Contenido principal -->
-    <main>
-        <section>
-            <h2>Bienvenido a mi Portfolio Web</h2>
-            <article>
-                <h3>Acerca de este sitio</h3>
-                <p>Este sitio web contiene todas las actividades realizadas durante el primer cuatrimestre de la materia "Diseño de Páginas Web". Cada página representa una actividad específica con diferentes elementos HTML5.</p>
-            </article>
-        </section>
+    <main class="flex-grow-1 py-4">
+        <div class="container">
+            <section class="mb-5">
+                <h2 class="mb-3">Bienvenido a mi Portfolio Web</h2>
+                <article class="bg-pastel-primary p-4 rounded">
+                    <h3 class="mb-3">Acerca de este sitio</h3>
+                    <p class="mb-0">Este sitio web contiene el trabajo integrador final del segundo cuatrimestre de la materia "Diseño de Páginas Web". Incluye todas las actividades realizadas durante el cuatrimestre, organizadas en una estructura semántica coherente.</p>
+                </article>
+            </section>
 
-        <section>
-            <h2>Contenido del Portfolio</h2>
-            <article>
+            <section class="mb-5">
+                <h2 class="mb-3">Contenido del Portfolio</h2>
+            <article class="mb-4">
                 <h3>Actividad 1 - Enlaces y Formato</h3>
                 <p>En esta actividad se trabajó con:</p>
                 <ul>
@@ -48,10 +71,10 @@
                     <li>Hipervínculos internos, externos y a otras páginas</li>
                     <li>Atributos de enlaces</li>
                 </ul>
-                <a href="actividad1.html">Ver Actividad 1</a>
+                <a href="actividad1.html" class="btn btn-outline-pastel-primary hover-transition btn-sm">Ver Actividad 1</a>
             </article>
 
-            <article>
+            <article class="mb-4">
                 <h3>Actividad 2 - Multimedia</h3>
                 <p>En esta actividad se implementó:</p>
                 <ul>
@@ -60,10 +83,10 @@
                     <li>Elementos de audio y video</li>
                     <li>Contenido embebido con iframe</li>
                 </ul>
-                <a href="actividad2.html">Ver Actividad 2</a>
+                <a href="actividad2.html" class="btn btn-outline-pastel-primary hover-transition btn-sm">Ver Actividad 2</a>
             </article>
 
-            <article>
+            <article class="mb-4">
                 <h3>Actividad 3 - Tablas y Formularios</h3>
                 <p>En esta actividad se desarrolló:</p>
                 <ul>
@@ -72,22 +95,25 @@
                     <li>Elementos de formulario avanzados</li>
                     <li>Validación y accesibilidad</li>
                 </ul>
-                <a href="actividad3.html">Ver Actividad 3</a>
+                <a href="actividad3.html" class="btn btn-outline-pastel-primary hover-transition btn-sm">Ver Actividad 3</a>
             </article>
         </section>
 
-        <aside>
+        <aside class="mt-5">
             <h3>Información Adicional</h3>
             <p>Este portfolio demuestra el dominio de las tecnologías web fundamentales y las mejores prácticas de desarrollo web semántico.</p>
-            <p>Fecha de presentación: 4 de Julio, 2024</p>
+            <p>Fecha de presentación: 07/11/2025</p>
         </aside>
     </main>
 
     <!-- Footer: Pie de página -->
-    <footer>
-        <p>&copy; 2024 Fontana Andrés - Diseño de Páginas Web</p>
-        <p>Instituto Superior de Formacion Docente y Tecnica N°28</p>
-        <p>Primer Cuatrimestre - TP4</p>
+    <footer class="bg-pastel-accent py-3 text-center mt-auto">
+        <p class="mb-1">&copy; 2024 Fontana Andrés - Diseño de Páginas Web</p>
+        <p class="mb-1">Instituto Superior de Formacion Docente y Tecnica N°28</p>
+        <p class="mb-0">Segundo Cuatrimestre - Trabajo Integrador Final</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html> 
+</html>
